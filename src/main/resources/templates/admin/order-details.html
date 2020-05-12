@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from hencework.com/theme/doodle-demo/full-width-light/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jan 2020 09:15:48 GMT -->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Admin | Order-Details</title>
+	<meta name="description" content="Doodle is a Dashboard & Admin Site Responsive Template by hencework." />
+	<meta name="keywords"
+		  content="admin, admin dashboard, admin template, cms, crm, Doodle Admin, Doodleadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
+	<meta name="author" content="hencework" />
+
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+	<!-- vector map CSS -->
+	<link href="vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet"
+		  type="text/css" />
+
+
+
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Morris Charts CSS -->
+	<link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css" />
+
+	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet"
+		  type="text/css">
+	<link href="vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css">
+
+
+	<link href="vendors/bower_components/dropify/dist/css/dropify.min.css" rel="stylesheet" type="text/css" />
+
+
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader-it">
+	<div class="la-anim-1"></div>
+</div>
+<!-- /Preloader -->
+<div class="wrapper theme-1-active pimary-color-red">
+	<!-- Top Menu Items -->
+	<div id="top-and-side-bar" style="display: block;">
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+
+			<div class="mobile-only-brand pull-left">
+				<div class="nav-header pull-left">
+					<div class="logo-wrap">
+						<a href="index-2.html">
+							<img class="brand-img" src="../img/logo.png" alt="brand" />
+							<span class="brand-text">E-Commerce</span>
+						</a>
+					</div>
+				</div>
+				<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left"
+				   href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+				<a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form"
+				   class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+				<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i
+						class="zmdi zmdi-more"></i></a>
+				<form id="search_form" role="search" class="top-nav-search collapse pull-left">
+					<div class="input-group">
+						<input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
+						<span class="input-group-btn">
+								<button type="button" class="btn  btn-default" data-target="#search_form"
+										data-toggle="collapse" aria-label="Close" aria-expanded="true"><i
+										class="zmdi zmdi-search"></i></button>
+							</span>
+					</div>
+				</form>
+			</div>
+			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
+				<ul class="nav navbar-right top-nav pull-right">
+					<li>
+						<a id="open_right_sidebar" href="#"><i class="zmdi zmdi-settings top-nav-icon"></i></a>
+					</li>
+					<li class="dropdown app-drp">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+								class="zmdi zmdi-apps top-nav-icon"></i></a>
+						<ul class="dropdown-menu app-dropdown" data-dropdown-in="slideInRight"
+							data-dropdown-out="flipOutX">
+							<li>
+								<div class="app-nicescroll-bar">
+									<ul class="app-icon-wrap pa-10">
+										<li>
+											<a href="weather.html" class="connection-item">
+												<i class="zmdi zmdi-cloud-outline txt-info"></i>
+												<span class="block">weather</span>
+											</a>
+										</li>
+										<li>
+											<a href="inbox.html" class="connection-item">
+												<i class="zmdi zmdi-email-open txt-success"></i>
+												<span class="block">e-mail</span>
+											</a>
+										</li>
+										<li>
+											<a href="calendar.html" class="connection-item">
+												<i class="zmdi zmdi-calendar-check txt-primary"></i>
+												<span class="block">calendar</span>
+											</a>
+										</li>
+										<li>
+											<a href="vector-map.html" class="connection-item">
+												<i class="zmdi zmdi-map txt-danger"></i>
+												<span class="block">map</span>
+											</a>
+										</li>
+										<li>
+											<a href="chats.html" class="connection-item">
+												<i class="zmdi zmdi-comment-outline txt-warning"></i>
+												<span class="block">chat</span>
+											</a>
+										</li>
+										<li>
+											<a href="contact-card.html" class="connection-item">
+												<i class="zmdi zmdi-assignment-account"></i>
+												<span class="block">contact</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="app-box-bottom-wrap">
+									<hr class="light-grey-hr ma-0" />
+									<a class="block text-center read-all" href="javascript:void(0)"> more </a>
+								</div>
+							</li>
+						</ul>
+					</li>
+
+					<li class="dropdown alert-drp">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+								class="zmdi zmdi-notifications top-nav-icon"></i><span
+								class="top-nav-icon-badge">5</span></a>
+						<ul class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn"
+							data-dropdown-out="bounceOut">
+							<li>
+								<div class="notification-box-head-wrap">
+									<span class="notification-box-head pull-left inline-block">notifications</span>
+									<a class="txt-danger pull-right clear-notifications inline-block"
+									   href="javascript:void(0)"> clear all </a>
+									<div class="clearfix"></div>
+									<hr class="light-grey-hr ma-0" />
+								</div>
+							</li>
+							<li>
+								<div class="streamline message-nicescroll-bar">
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-green">
+												<i class="zmdi zmdi-flag"></i>
+											</div>
+											<div class="sl-content">
+													<span
+															class="inline-block capitalize-font  pull-left truncate head-notifications">
+														New subscription created</span>
+												<span
+														class="inline-block font-11  pull-right notifications-time">2pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Your customer subscribed for the basic plan. The
+													customer will pay $25 per month.</p>
+											</div>
+										</a>
+									</div>
+									<hr class="light-grey-hr ma-0" />
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-yellow">
+												<i class="zmdi zmdi-trending-down"></i>
+											</div>
+											<div class="sl-content">
+													<span
+															class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Server
+														#2 not responding</span>
+												<span
+														class="inline-block font-11 pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Some technical error occurred needs to be
+													resolved.
+												</p>
+											</div>
+										</a>
+									</div>
+									<hr class="light-grey-hr ma-0" />
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-blue">
+												<i class="zmdi zmdi-email"></i>
+											</div>
+											<div class="sl-content">
+													<span
+															class="inline-block capitalize-font  pull-left truncate head-notifications">2
+														new messages</span>
+												<span
+														class="inline-block font-11  pull-right notifications-time">4pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate"> The last payment for your G Suite Basic
+													subscription failed.</p>
+											</div>
+										</a>
+									</div>
+									<hr class="light-grey-hr ma-0" />
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="sl-avatar">
+												<img class="img-responsive" src="../img/avatar.jpg" alt="avatar" />
+											</div>
+											<div class="sl-content">
+													<span
+															class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy
+														Doe</span>
+												<span
+														class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Neque porro quisquam est qui dolorem ipsum quia
+													dolor sit amet, consectetur, adipisci velit</p>
+											</div>
+										</a>
+									</div>
+									<hr class="light-grey-hr ma-0" />
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-red">
+												<i class="zmdi zmdi-storage"></i>
+											</div>
+											<div class="sl-content">
+													<span
+															class="inline-block capitalize-font  pull-left truncate head-notifications txt-danger">99%
+														server space occupied.</span>
+												<span
+														class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">consectetur, adipisci velit.</p>
+											</div>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="notification-box-bottom-wrap">
+									<hr class="light-grey-hr ma-0" />
+									<a class="block text-center read-all" href="javascript:void(0)"> read all </a>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown auth-drp">
+						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="../img/user1.png"
+																							 alt="user_auth" class="user-auth-img img-circle" /><span
+								class="user-online-status"></span></a>
+						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX"
+							data-dropdown-out="flipOutX">
+							<li>
+								<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-card"></i><span>my balance</span></a>
+							</li>
+							<li>
+								<a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-settings"></i><span>Settings</span></a>
+							</li>
+							<li class="divider"></li>
+							<li class="sub-menu show-on-hover">
+								<a href="#" class="dropdown-toggle pr-0 level-2-drp"><i
+										class="zmdi zmdi-check text-success"></i> available</a>
+								<ul class="dropdown-menu open-left-side">
+									<li>
+										<a href="#"><i
+												class="zmdi zmdi-check text-success"></i><span>available</span></a>
+									</li>
+									<li>
+										<a href="#"><i
+												class="zmdi zmdi-circle-o text-warning"></i><span>busy</span></a>
+									</li>
+									<li>
+										<a href="#"><i
+												class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- /Top Menu Items -->
+
+		<!-- Left Sidebar Menu -->
+		<div class="fixed-sidebar-left">
+
+			<ul class="nav navbar-nav side-nav nicescroll-bar">
+				<li class="navigation-header">
+					<span>Main</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
+						<div class="pull-left"><i class="fa fa-tachometer mr-20"></i><span
+								class="right-nav-text">Dashboard</span></div>
+						<div class="clearfix"></div>
+					</a>
+					<!-- <ul id="dashboard_dr" class="collapse collapse-level-1">
+            <li>
+                <a class="active-page" href="index-2.html">Analytical</a>
+            </li>
+            <li>
+                <a href="index2.html">Demographic</a>
+            </li>
+            <li>
+                <a href="index3.html">Project</a>
+            </li>
+            <li>
+                <a href="profile.html">profile</a>
+            </li>
+        </ul> -->
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr">
+						<div class="pull-left"><i class="fa fa-cubes  mr-20"></i><span
+								class="right-nav-text">Component</span>
+						</div>
+						<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+						<div class="clearfix"></div>
+					</a>
+					<ul id="ecom_dr" class="collapse collapse-level-1">
+						<li>
+							<a href="/admin/category">Category</a>
+						</li>
+						<li>
+							<a href="/admin/brand-color-size">Brand, Color, Size</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr">
+						<div class="pull-left"><i class="fa fa-futbol-o mr-20"></i><span
+								class="right-nav-text ">Product
+								</span></div>
+						<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+						<div class="clearfix"></div>
+					</a>
+					<ul id="app_dr" class="collapse collapse-level-1">
+						<li>
+							<a href="/admin/all-product">All Product</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Product Details</a>
+						</li>
+						<li>
+							<a href="/admin/add-product">Add Product</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Edit Product</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#order_dr">
+						<div class="pull-left"><i class="fa fa-th-list mr-20"></i><span
+								class="right-nav-text ">Order
+								</span></div>
+						<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+						<div class="clearfix"></div>
+					</a>
+					<ul id="order_dr" class="collapse collapse-level-1">
+						<li>
+							<a href="/admin/order-history">Order History</a>
+						</li>
+						<li>
+							<a class="active-page" href="javascript:void(0)">Order Details</a>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#user_dr">
+						<div class="pull-left"><i class="fa fa-users mr-20"></i><span class="right-nav-text">App
+									User
+								</span></div>
+						<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+						<div class="clearfix"></div>
+					</a>
+					<ul id="user_dr" class="collapse collapse-level-1">
+						<li>
+							<a href="">Customer</a>
+						</li>
+						<li>
+							<a href="">Admin</a>
+						</li>
+						<li>
+							<a href="">Subscriber</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<hr class="light-grey-hr mb-10" />
+				</li>
+				<li class="navigation-header">
+					<span>Others</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr">
+						<div class="pull-left"><i class="fa fa-newspaper-o mr-20"></i><span
+								class="right-nav-text">Blog</span></div>
+						<div class="clearfix"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr">
+						<div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span
+								class="right-nav-text">About
+									Us</span></div>
+						<div class="clearfix"></div>
+					</a>
+
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr">
+						<div class="pull-left"><i class="fa fa-volume-control-phone  mr-20"></i><span
+								class="right-nav-text">Contact
+									Us </span></div>
+						<div class="clearfix"></div>
+					</a>
+
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr">
+						<div class="pull-left"><i class="fa fa-question-circle-o mr-20"></i><span
+								class="right-nav-text">FAQ</span></div>
+						<div class="clearfix"></div>
+					</a>
+				</li>
+
+				<!-- <li>
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr">
+            <div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span
+                    class="right-nav-text">Icons</span></div>
+            <div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+            <div class="clearfix"></div>
+        </a>
+        <ul id="icon_dr" class="collapse collapse-level-1">
+            <li>
+                <a href="fontawesome.html">Fontawesome</a>
+            </li>
+            <li>
+                <a href="themify.html">Themify</a>
+            </li>
+            <li>
+                <a href="linea-icon.html">Linea</a>
+            </li>
+            <li>
+                <a href="simple-line-icons.html">Simple Line</a>
+            </li>
+            <li>
+                <a href="pe-icon-7.html">Pe-icon-7</a>
+            </li>
+            <li>
+                <a href="glyphicons.html">Glyphicons</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#maps_dr">
+            <div class="pull-left"><i class="zmdi zmdi-map mr-20"></i><span
+                    class="right-nav-text">maps</span></div>
+            <div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div>
+            <div class="clearfix"></div>
+        </a>
+        <ul id="maps_dr" class="collapse collapse-level-1">
+            <li>
+                <a href="vector-map.html">Vector Map</a>
+            </li>
+            <li>
+                <a href="google-map.html">Google Map</a>
+            </li>
+        </ul>
+    </li> -->
+				<li>
+					<hr class="light-grey-hr mb-10" />
+				</li>
+				<li class="navigation-header">
+					<span>Developer</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr">
+						<div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span
+								class="right-nav-text">About Developer</span></div>
+						<div class="clearfix"></div>
+					</a>
+
+				</li>
+
+			</ul>
+		</div>
+		<!-- /Left Sidebar Menu -->
+
+	</div>
+
+	<!-- Right Sidebar Menu -->
+	<div class="fixed-sidebar-right">
+		<ul class="right-sidebar">
+			<li>
+				<div class="tab-struct custom-tab-1">
+					<ul role="tablist" class="nav nav-tabs" id="right_sidebar_tab">
+						<li class="active" role="presentation"><a aria-expanded="true" data-toggle="tab" role="tab"
+																  id="chat_tab_btn" href="#chat_tab">chat</a></li>
+						<li role="presentation" class=""><a data-toggle="tab" id="messages_tab_btn" role="tab"
+															href="#messages_tab" aria-expanded="false">messages</a></li>
+						<li role="presentation" class=""><a data-toggle="tab" id="todo_tab_btn" role="tab"
+															href="#todo_tab" aria-expanded="false">todo</a></li>
+					</ul>
+					<div class="tab-content" id="right_sidebar_content">
+						<div id="chat_tab" class="tab-pane fade active in" role="tabpanel">
+							<div class="chat-cmplt-wrap">
+								<div class="chat-box-wrap">
+									<div class="add-friend">
+										<a href="javascript:void(0)" class="inline-block txt-grey">
+											<i class="zmdi zmdi-more"></i>
+										</a>
+										<span class="inline-block txt-dark">users</span>
+										<a href="javascript:void(0)" class="inline-block text-right txt-grey"><i
+												class="zmdi zmdi-plus"></i></a>
+										<div class="clearfix"></div>
+									</div>
+									<form role="search" class="chat-search pl-15 pr-15 pb-15">
+										<div class="input-group">
+											<input type="text" id="example-input1-group2"
+												   name="example-input1-group2" class="form-control"
+												   placeholder="Search">
+											<span class="input-group-btn">
+													<button type="button" class="btn  btn-default"><i
+															class="zmdi zmdi-search"></i></button>
+												</span>
+										</div>
+									</form>
+									<div id="chat_list_scroll">
+										<div class="nicescroll-bar">
+											<ul class="chat-list-wrap">
+												<li class="chat-list">
+													<div class="chat-body">
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Clay
+																			Masse</span>
+																	<span class="time block truncate txt-grey">No
+																			one saves us but ourselves.</span>
+																</div>
+																<div class="status away"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user1.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Evie
+																			Ono</span>
+																	<span class="time block truncate txt-grey">Unity
+																			is strength</span>
+																</div>
+																<div class="status offline"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user2.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Madalyn
+																			Rascon</span>
+																	<span
+																			class="time block truncate txt-grey">Respect
+																			yourself if you would have others respect
+																			you.</span>
+																</div>
+																<div class="status online"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user3.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Mitsuko
+																			Heid</span>
+																	<span class="time block truncate txt-grey">I’m
+																			thankful.</span>
+																</div>
+																<div class="status online"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user.png" alt="user" />
+																<div class="user-data">
+																		<span
+																				class="name block capitalize-font">Ezequiel
+																			Merideth</span>
+																	<span
+																			class="time block truncate txt-grey">Patience
+																			is bitter.</span>
+																</div>
+																<div class="status offline"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user1.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Jonnie
+																			Metoyer</span>
+																	<span
+																			class="time block truncate txt-grey">Genius
+																			is eternal patience.</span>
+																</div>
+																<div class="status online"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user2.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Angelic
+																			Lauver</span>
+																	<span class="time block truncate txt-grey">Every
+																			burden is a blessing.</span>
+																</div>
+																<div class="status away"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user3.png" alt="user" />
+																<div class="user-data">
+																		<span
+																				class="name block capitalize-font">Priscila
+																			Shy</span>
+																	<span class="time block truncate txt-grey">Wise
+																			to resolve, and patient to perform.</span>
+																</div>
+																<div class="status online"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+														<a href="javascript:void(0)">
+															<div class="chat-data">
+																<img class="user-img img-circle"
+																	 src="../img/user4.png" alt="user" />
+																<div class="user-data">
+																		<span class="name block capitalize-font">Linda
+																			Stack</span>
+																	<span class="time block truncate txt-grey">Our
+																			patience will achieve more than our
+																			force.</span>
+																</div>
+																<div class="status away"></div>
+																<div class="clearfix"></div>
+															</div>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="recent-chat-box-wrap">
+									<div class="recent-chat-wrap">
+										<div class="panel-heading ma-0">
+											<div class="goto-back">
+												<a id="goto_back" href="javascript:void(0)"
+												   class="inline-block txt-grey">
+													<i class="zmdi zmdi-chevron-left"></i>
+												</a>
+												<span class="inline-block txt-dark">ryan</span>
+												<a href="javascript:void(0)"
+												   class="inline-block text-right txt-grey"><i
+														class="zmdi zmdi-more"></i></a>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+										<div class="panel-wrapper collapse in">
+											<div class="panel-body pa-0">
+												<div class="chat-content">
+													<ul class="nicescroll-bar pt-20">
+														<li class="friend">
+															<div class="friend-msg-wrap">
+																<img class="user-img img-circle block pull-left"
+																	 src="../img/user.png" alt="user" />
+																<div class="msg pull-left">
+																	<p>Hello Jason, how are you, it's been a long
+																		time since we last met?</p>
+																	<div class="msg-per-detail text-right">
+																			<span class="msg-time txt-grey">2:30
+																				PM</span>
+																	</div>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</li>
+														<li class="self mb-10">
+															<div class="self-msg-wrap">
+																<div class="msg block pull-right"> Oh, hi Sarah I'm
+																	have got a new job now and is going great.
+																	<div class="msg-per-detail text-right">
+																			<span class="msg-time txt-grey">2:31
+																				pm</span>
+																	</div>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</li>
+														<li class="self">
+															<div class="self-msg-wrap">
+																<div class="msg block pull-right"> How about you?
+																	<div class="msg-per-detail text-right">
+																			<span class="msg-time txt-grey">2:31
+																				pm</span>
+																	</div>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</li>
+														<li class="friend">
+															<div class="friend-msg-wrap">
+																<img class="user-img img-circle block pull-left"
+																	 src="../img/user.png" alt="user" />
+																<div class="msg pull-left">
+																	<p>Not too bad.</p>
+																	<div class="msg-per-detail  text-right">
+																			<span class="msg-time txt-grey">2:35
+																				pm</span>
+																	</div>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="input-group">
+													<input type="text" id="input_msg_send" name="send-msg"
+														   class="input-msg-send form-control"
+														   placeholder="Type something">
+													<div class="input-group-btn emojis">
+														<div class="dropup">
+															<button type="button"
+																	class="btn  btn-default  dropdown-toggle"
+																	data-toggle="dropdown"><i
+																	class="zmdi zmdi-mood"></i></button>
+															<ul class="dropdown-menu dropdown-menu-right">
+																<li><a href="javascript:void(0)">Action</a></li>
+																<li><a href="javascript:void(0)">Another action</a>
+																</li>
+																<li class="divider"></li>
+																<li><a href="javascript:void(0)">Separated link</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="input-group-btn attachment">
+														<div class="fileupload btn  btn-default"><i
+																class="zmdi zmdi-attachment-alt"></i>
+															<input type="file" class="upload">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="messages_tab" class="tab-pane fade" role="tabpanel">
+							<div class="message-box-wrap">
+								<div class="msg-search">
+									<a href="javascript:void(0)" class="inline-block txt-grey">
+										<i class="zmdi zmdi-more"></i>
+									</a>
+									<span class="inline-block txt-dark">messages</span>
+									<a href="javascript:void(0)" class="inline-block text-right txt-grey"><i
+											class="zmdi zmdi-search"></i></a>
+									<div class="clearfix"></div>
+								</div>
+								<div class="set-height-wrap">
+									<div class="streamline message-box nicescroll-bar">
+										<a href="javascript:void(0)">
+											<div class="sl-item unread-message">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Clay
+															Masse</span>
+													<span
+															class="inline-block font-11  pull-right message-time">12:28
+															AM</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Themeforest message sent
+															via your envato market profile</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsu messm quia dolor sit amet, consectetur,
+														adipisci velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user1.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Evie
+															Ono</span>
+													<span class="inline-block font-11  pull-right message-time">1
+															Feb</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Pogody theme
+															support</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user2.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Madalyn
+															Rascon</span>
+													<span class="inline-block font-11  pull-right message-time">31
+															Jan</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Congratulations from
+															design nominees</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item unread-message">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user3.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Ezequiel
+															Merideth</span>
+													<span class="inline-block font-11  pull-right message-time">29
+															Jan</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Themeforest item support
+															message</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item unread-message">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user4.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Jonnie
+															Metoyer</span>
+													<span class="inline-block font-11  pull-right message-time">27
+															Jan</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Help with beavis contact
+															form</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Priscila
+															Shy</span>
+													<span class="inline-block font-11  pull-right message-time">19
+															Jan</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject">Your uploaded theme is
+															been selected</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:void(0)">
+											<div class="sl-item">
+												<div class="sl-avatar avatar avatar-sm avatar-circle">
+													<img class="img-responsive img-circle" src="../img/user1.png"
+														 alt="avatar" />
+												</div>
+												<div class="sl-content">
+														<span
+																class="inline-block capitalize-font   pull-left message-per">Linda
+															Stack</span>
+													<span class="inline-block font-11  pull-right message-time">13
+															Jan</span>
+													<div class="clearfix"></div>
+													<span class=" truncate message-subject"> A new rating has been
+															received</span>
+													<p class="txt-grey truncate">Neque porro quisquam est qui
+														dolorem ipsum quia dolor sit amet, consectetur, adipisci
+														velit</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="todo_tab" class="tab-pane fade" role="tabpanel">
+							<div class="todo-box-wrap">
+								<div class="add-todo">
+									<a href="javascript:void(0)" class="inline-block txt-grey">
+										<i class="zmdi zmdi-more"></i>
+									</a>
+									<span class="inline-block txt-dark">todo list</span>
+									<a href="javascript:void(0)" class="inline-block text-right txt-grey"><i
+											class="zmdi zmdi-plus"></i></a>
+									<div class="clearfix"></div>
+								</div>
+								<div class="set-height-wrap">
+									<!-- Todo-List -->
+									<ul class="todo-list nicescroll-bar">
+										<li class="todo-item">
+											<div class="checkbox checkbox-default">
+												<input type="checkbox" id="checkbox01" />
+												<label for="checkbox01">Record The First Episode</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+										<li class="todo-item">
+											<div class="checkbox checkbox-pink">
+												<input type="checkbox" id="checkbox02" />
+												<label for="checkbox02">Prepare The Conference Schedule</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+										<li class="todo-item">
+											<div class="checkbox checkbox-warning">
+												<input type="checkbox" id="checkbox03" checked />
+												<label for="checkbox03">Decide The Live Discussion Time</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+										<li class="todo-item">
+											<div class="checkbox checkbox-success">
+												<input type="checkbox" id="checkbox04" checked />
+												<label for="checkbox04">Prepare For The Next Project</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+										<li class="todo-item">
+											<div class="checkbox checkbox-danger">
+												<input type="checkbox" id="checkbox05" checked />
+												<label for="checkbox05">Finish Up AngularJs Tutorial</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+										<li class="todo-item">
+											<div class="checkbox checkbox-purple">
+												<input type="checkbox" id="checkbox06" checked />
+												<label for="checkbox06">Finish Infinity Project</label>
+											</div>
+										</li>
+										<li>
+											<hr class="light-grey-hr" />
+										</li>
+									</ul>
+									<!-- /Todo-List -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- /Right Sidebar Menu -->
+
+	<!-- Right Setting Menu -->
+	<div class="setting-panel">
+		<ul class="right-sidebar nicescroll-bar pa-0">
+			<li class="layout-switcher-wrap">
+				<ul>
+					<li>
+						<span class="layout-title">Scrollable sidebar</span>
+						<span class="layout-switcher">
+								<input type="checkbox" id="switch_3" class="js-switch" data-color="#ea6c41"
+									   data-secondary-color="#878787" data-size="small" />
+							</span>
+						<h6 class="mt-30 mb-15">Theme colors</h6>
+						<ul class="theme-option-wrap">
+							<li id="theme-1" class="active-theme"><i class="zmdi zmdi-check"></i></li>
+							<li id="theme-2"><i class="zmdi zmdi-check"></i></li>
+							<li id="theme-3"><i class="zmdi zmdi-check"></i></li>
+							<li id="theme-4"><i class="zmdi zmdi-check"></i></li>
+							<li id="theme-5"><i class="zmdi zmdi-check"></i></li>
+							<li id="theme-6"><i class="zmdi zmdi-check"></i></li>
+						</ul>
+						<h6 class="mt-30 mb-15">Primary colors</h6>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-red" checked
+								   value="pimary-color-red">
+							<label for="pimary-color-red"> Red </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-blue"
+								   value="pimary-color-blue">
+							<label for="pimary-color-blue"> Blue </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-green"
+								   value="pimary-color-green">
+							<label for="pimary-color-green"> Green </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-yellow"
+								   value="pimary-color-yellow">
+							<label for="pimary-color-yellow"> Yellow </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-pink"
+								   value="pimary-color-pink">
+							<label for="pimary-color-pink"> Pink </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-orange"
+								   value="pimary-color-orange">
+							<label for="pimary-color-orange"> Orange </label>
+						</div>
+						<div class="radio mb-5">
+							<input type="radio" name="radio-primary-color" id="pimary-color-gold"
+								   value="pimary-color-gold">
+							<label for="pimary-color-gold"> Gold </label>
+						</div>
+						<div class="radio mb-35">
+							<input type="radio" name="radio-primary-color" id="pimary-color-silver"
+								   value="pimary-color-silver">
+							<label for="pimary-color-silver"> Silver </label>
+						</div>
+						<button id="reset_setting"
+								class="btn  btn-info btn-xs btn-outline btn-rounded mb-10">reset</button>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<button id="setting_panel_btn" class="btn btn-success btn-circle setting-panel-btn shadow-2dp"><i
+			class="zmdi zmdi-settings"></i></button>
+	<!-- /Right Setting Menu -->
+
+	<!-- Right Sidebar Backdrop -->
+	<div class="right-sidebar-backdrop"></div>
+	<!-- /Right Sidebar Backdrop -->
+
+	<!-- Main Content -->
+
+	<div class="page-wrapper">
+
+		<div class="container-fluid pt-25">
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+				<div class="row heading-bg">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						<h5 class="txt-dark">Order Details</h5>
+					</div>
+					<!-- Breadcrumb -->
+					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+						<ol class="breadcrumb">
+							<li><a href="index-2.html">Admin</a></li>
+							<li><a href="#"><span>Order</span></a></li>
+							<li class="active"><span>Oredr-Details</span></li>
+						</ol>
+					</div>
+					<!-- /Breadcrumb -->
+				</div>
+
+			</div>
+
+			<!-- Row -->
+
+
+			<div class="row"></div>
+
+
+
+			<div id="main-content-from-here">
+
+
+
+
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view panel-refresh">
+							<div class="refresh-container">
+								<div class="la-anim-1"></div>
+							</div>
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Customer And Shipping Info
+									</h6>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="pull-left inline-block refresh mr-15">
+										<i class="zmdi zmdi-replay"></i>
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="panel-wrapper collapse in">
+
+								<div class="panel-body">
+
+									<div align="center" style="display: block; width: 100%; height: 160px;">
+										<div
+												style="margin-top:5px; padding-top: 15px; background-color: #fff; width: 70px; height: 70px; border-radius: 50%; border: 1px solid #EA6C41">
+											<i style="font-size: 30px; color: #EA6C41; " class="icon-user"></i>
+										</div>
+										<p style="margin-top:12px"><a href="javascript:void(0)">[[${appUser.name}]]</a></p>
+										<a href="#">[[${appUser.email}]]</a>
+										<p>[[${appUser.phone}]]</p>
+
+									</div>
+
+
+									<div align="center" style="margin: 2px 0px; width: 100%; height: auto;">
+
+										<a
+												style="text-align: center; padding-top: 4px; background-color: rgb(65, 164, 221); padding: 8px 8px; border-radius: 10%;">
+											<i style="font-size: 12px; color: #fff; " class=" icon-call-out"></i>
+										</a>
+
+										<a
+												style="margin: 0px 10px; text-align: center; padding-top: 4px; background-color: rgb(218, 46, 40); padding: 8px 8px 8px 12px; border-radius: 10%;">
+											<i style="font-size: 12px; color: #fff; "
+											   class="icon-envelope-open"></i>
+										</a>
+
+										<a
+												style="text-align: center; padding-top: 4px; background-color: rgb(102, 185, 76); padding: 8px 10px; border-radius: 10%;">
+											<i style="font-size: 12px; color: #fff; "
+											   class=" icon-arrow-right-circle"></i>
+										</a>
+
+									</div>
+
+
+
+									<br />
+
+
+									<hr class="light-grey-hr row mt-10 mb-15">
+									<div class="label-chatrs">
+										<div class="">
+
+												<span
+														class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+														class="block font-15 weight-500 mb-5">Address</span><span
+														class="block txt-grey">[[${customerOrder.shippingAddress.address}]]</span></span>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+
+									<hr class="light-grey-hr row mt-10 mb-15">
+									<div class="label-chatrs">
+										<div class="">
+
+												<span
+														class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+														class="block font-15 weight-500 mb-5">City</span><span
+														class="block txt-grey">[[${customerOrder.shippingAddress.city}]]</span></span>
+
+											<div class="clearfix"></div>
+										</div>
+									</div>
+
+									<hr class="light-grey-hr row mt-10 mb-15">
+									<div class="label-chatrs">
+										<div class="">
+												<span
+														class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+														class="block font-15 weight-500 mb-5">Country/Region</span><span
+														class="block txt-grey">[[${customerOrder.shippingAddress.country}]]</span></span>
+
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<hr class="light-grey-hr row mt-10 mb-15">
+									<div class="label-chatrs">
+										<div class="">
+												<span
+														class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+														class="block font-15 weight-500 mb-5">Postal Code</span><span
+														class="block txt-grey">[[${customerOrder.shippingAddress.postalCode}]]</span></span>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<hr class="light-grey-hr row mt-10 mb-15">
+									<div class="label-chatrs">
+										<div class="">
+												<span
+														class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span
+														class="block font-15 weight-500 mb-5">Contact Number</span><span
+														class="block txt-grey">[[${customerOrder.shippingAddress.contact}]]</span></span>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+
+
+
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body sm-data-box-1">
+										<span class="uppercase-font weight-500 font-14 block txt-dark">Order
+											Status</span>
+
+
+									<div class="row ">
+										<div class=" col-xs-4">
+											<div class="radio radio-warning">
+												<input id="pending" type="radio"  value="Pending"
+													   name="status">
+												<label for="pending">
+													Pending
+												</label>
+											</div>
+										</div>
+
+
+										<div class=" col-xs-4">
+											<div class="radio radio-success col-xs-4">
+												<input id="success" type="radio" value="Success" name="status">
+												<label for="success">
+													Success
+												</label>
+											</div>
+										</div>
+
+
+										<div class=" col-xs-4">
+											<div class="radio radio-danger col-xs-4">
+												<input id="failed" type="radio" value="Failed" name="status">
+												<label for="failed">
+													Failed
+												</label>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body sm-data-box-1">
+										<span
+												class="uppercase-font weight-500 font-14 block text-center txt-dark">profit
+											form this order</span>
+									<div class="cus-sat-stat weight-500 txt-success text-center mt-5">
+										<span class="counter-anim">[[${customerOrder.profitPercentage}]]</span><span>%</span>
+									</div>
+									<div class="progress-anim mt-20">
+										<div class="progress">
+											<div class="progress-bar progress-bar-success wow animated progress-animated"
+												 role="progressbar" aria-valuemin="0"
+												 aria-valuemax="100" th:style="'width:'+${customerOrder.profitPercentage}+'%;'"></div>
+										</div>
+									</div>
+									<ul class="flex-stat mt-5">
+										<li>
+											<span class="block" style="font-size:11px">ACTUAL TOTAL</span>
+											<span class="block txt-dark weight-500 font-14">৳[[${customerOrder.totalActualPrice}]]</span>
+										</li>
+										<li>
+											<span class="block" style="font-size:11px">SUBTOTAL</span>
+											<span class=" block txt-dark weight-500 font-14">৳[[${customerOrder.totalPrice}]]</span>
+										</li>
+										<li>
+											<span class="block" style="font-size:11px">PROFIT</span>
+											<span class=" block txt-dark weight-500 font-14">৳[[${customerOrder.profit}]]</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default card-view">
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Order Bill :</h6>
+								</div>
+
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div>
+											<span class="pull-left inline-block capitalize-font txt-dark">
+												Total For Old Price :
+											</span>
+										<span class="pull-right">৳[[${customerOrder.totalOldPrice}]]</span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10">
+										<span class="pull-left inline-block capitalize-font txt-dark">
+												Sub Total :
+											</span>
+										<span class=" pull-right">৳[[${customerOrder.totalPrice}]]</span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10">
+										<span class="pull-left inline-block capitalize-font txt-dark">
+												Service Charge :
+											</span>
+										<span class="pull-right">৳[[${customerOrder.serviceCharge}]]</span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10">
+										<span class="pull-left inline-block capitalize-font txt-dark">
+												Total :
+											</span>
+										<span class="pull-right">৳[[${customerOrder.total}]]</span>
+										<div class="clearfix"></div>
+
+										<hr class="light-grey-hr row mt-10 mb-10">
+										<div class="pull-left inline-block capitalize-font txt-dark">
+											Include vat :
+										</div>
+										<input value="30" onchange="defineVat(this)"
+											   style="font-size: 12px; outline: none !important; padding: 0px 0px 0px 5px; border-radius: 3px; border: 1px solid rgb(206, 206, 206);"
+											   class="pull-right" type="number" max="99" min="0" minlength="1"
+											   maxlength="2">
+										<div class="clearfix"></div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="receipt-content2" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+						<div class="panel panel-default card-view ">
+
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Sales Receipts</h6>
+								</div>
+								<div class="pull-right">
+									<a onclick="printSalesReceipt()" href="javascript:void(0)"
+									   class="pull-left inline-block  mr-15">
+										<i class=" icon-printer"></i>
+									</a>
+
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+
+									<div id="morris_extra_line_chart" class="morris-chart"
+										 style="height: 519px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); overflow-y: scroll; overflow-x: hidden; ">
+
+
+										<div id="receipt-content" style="padding: 5px 10px;">
+
+											<div style="width: 100%; height: 1.3px; background-color: #E99C26;">
+											</div>
+
+											<div style="margin-top: 10px; padding: 0px 15px;">
+
+												<div class="row">
+
+
+													<div class="col-xs-4">
+														<p style="color: #E99C26; font-weight: 600;">SOLD TO</p>
+														<div style="padding-top: 5px;">
+															<p style="font-size: 12px; color: #000">
+																	<span style="margin-right: 5px;"
+																		  class="icon-user"></span>[[${appUser.name}]]</p>
+															<p
+																	style="font-size: 12px; color: #000;margin-top: -7px;">
+																	<span style="margin-right: 5px;"
+																		  class="icon-envelope-open"></span>[[${appUser.email}]]
+															</p>
+															<p
+																	style="font-size: 12px; color: #000;margin-top: -7px;">
+																	<span style="margin-right: 5px;"
+																		  class=" icon-call-out"></span>[[${appUser.phone}]]</p>
+															<p
+																	style="font-size: 12px; color: #000;margin-top: -7px;">
+																	<span style="margin-right: 5px;"
+																		  class=" icon-location-pin"></span>[[${appUser.address}]], [[${appUser.city}]]
+															</p>
+
+														</div>
+													</div>
+
+
+													<div class="col-xs-4">
+														<p style="color: #E99C26; font-weight: 600;">SHIP TO</p>
+														<div style="padding-top: 5px;">
+
+															<p style="font-size: 12px; color: #000;margin-top: 0px;">
+																<span style="margin-right: 5px;" class=" icon-location-pin"></span>[[${customerOrder.shippingAddress.address}]]
+															</p>
+
+															<p style="font-size: 12px; color: #000;margin-top: -7px;">
+																<span style="margin-right: 5px;" class="icon-flag"></span>Postal Code : [[${customerOrder.shippingAddress.postalCode}]]</p>
+
+
+
+															<p style="font-size: 12px; color: #000;margin-top: -7px;">
+																<span style="margin-right: 5px;" class=" icon-call-out"></span>[[${customerOrder.shippingAddress.contact}]]</p>
+
+														</div>
+													</div>
+
+
+													<div class="col-xs-4" style="text-align: right;">
+
+														<p><span style="color: #e69a2a; font-weight: 600;"> ORDER ID
+																	:</span>
+															<span style="color: #000;">[[${customerOrder.orderNumber}]]</span> </p>
+														<div style="padding-top: 12px;">
+															<p style="font-size: 12px; color: #000; margin-top: -7px;">[[${customerOrder.date}]]
+																<span style="margin-left: 5px;" class="icon-calender"></span>
+															</p>
+															<p style="font-size: 12px; color: #000;margin-top: -7px;">
+																Method : [[${customerOrder.method}]]<span style="margin-left: 5px;" class="icon-credit-card"></span>
+															</p>
+														</div>
+													</div>
+
+												</div>
+											</div>
+
+
+											<style>
+												.reciept_table {
+													width: 100%;
+
+
+												}
+
+												.reciept_table tr th,
+												.reciept_table tr td {
+													border: 1px solid rgba(192, 189, 189, 0.582);
+													padding: 3px 10px;
+												}
+
+												.reciept_table tr td {
+													padding: 5px 10px;
+													color: #000;
+												}
+											</style>
+
+
+
+											<table style="margin-top: 15px;" class="reciept_table">
+
+												<thead style="background-color:#e69a2a; color: #fff;">
+												<tr>
+													<th style="text-align: center;">Sl No.</th>
+													<th>Description</th>
+													<th style="text-align: center;">Unit Price</th>
+													<th style="text-align: center;">Quantity</th>
+													<th style="text-align: center;">Amount</th>
+												</tr>
+												</thead>
+												<tbody>
+
+												<tr th:each="product,loop : ${customerOrder.orderItems}">
+													<td style="text-align: center;">[[${loop.count}]]</td>
+													<td>[[${product.productName}]]</td>
+													<td style="text-align: right;">৳ [[${product.price}]]</td>
+													<td class="qunt" style="text-align: center;">[[${product.quantity}]]</td>
+													<td style="text-align: right;">৳ [[${product.amount}]]</td>
+												</tr>
+												<tr>
+													<td style="text-align: left;" colspan="3">Sub total :</td>
+													<td style="text-align: center;" id="total_quantity">0</td>
+													<td style="text-align: right;">৳ [[${customerOrder.totalPrice}]]</td>
+												</tr>
+
+												</tbody>
+
+
+											</table>
+
+											<div style="margin-top: 20px; display: block;">
+												<div style="text-align: right;">
+													<p style=" color: #000;">Including vat : <span id="vat">30</span>%</p>
+													</p>
+													<p style="margin-top: 0px; color: #000;">Service charge : ৳ [[${customerOrder.serviceCharge}]]
+													</p>
+													<h6 style="font-weight: 700; margin-top: 10px;">Total : ৳ [[${customerOrder.total}]]
+													</h6>
+												</div>
+											</div>
+
+
+											<div
+													style="margin-top: 25px; width: 100%; height: 1px; background-color: #E99C26;">
+											</div>
+
+
+											<div style="margin-top: 10px;">
+												<div class="row">
+													<div class="col-xs-6" style="text-align: left;">
+														<p style="color: #E99C26; font-weight: 600;">Contact</p>
+														<p style="font-size: 12px; color: #000;margin-top: 5px;">
+																<span style="margin-right: 5px;"
+																	  class="icon-envelope-open"></span>[[${EMAIL_ADDRESS}]]
+														</p>
+														<p style="font-size: 12px; color: #000;margin-top: -7px;">
+																<span style="margin-right: 5px;"
+																	  class=" icon-call-out"></span>[[${PHONE_NUMBER}]]</p>
+													</div>
+													<div class="col-xs-6" style="text-align: right;;">
+														<p style="color: #E99C26; font-weight: 600;">Signature</p>
+														<div
+																style="margin-top:15px; float: right; width: 130px; height: 30px;  border: 1px solid rgba(87, 82, 82, 0.548);">
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											<p style="color: rgb(53, 50, 50); text-align: center; font-size: 11px;">
+												www.e-commerce.com</p>
+
+
+										</div>
+
+
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row -->
+
+
+
+
+
+
+
+				<h5 style="margin-top: 30px; margin-bottom: 20px;" class="txt-dark">Ordered Products</h5>
+
+
+				<div class="container-fluid2" style="padding: 0px 0px;">
+
+					<div class="row">
+
+
+						<div th:each="product : ${customerOrder.orderItems}" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+
+							<div class="panel panel-default card-view pa-0">
+								<div class="panel-wrapper collapse in">
+									<div class="panel-body pa-0">
+										<article class="col-items">
+											<div class="photo">
+												<a th:href="@{product-details(pid=${product.productId})}">
+													<img style="object-fit:cover;object-position:center;width: 100%; height:180px"
+														th:src="${product.productImage}" class="img-responsive"
+														alt="Product Image">
+												</a>
+											</div>
+											<div style="padding:15px 15px" class="info">
+												<p
+														style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; margin-right: 10px;">
+													[[${product.productName}]]</p>
+												<!--<div style="font-size: 17px;" class="product-rating inline-block ">-->
+													<!--<a href="javascript:void(0);"-->
+													   <!--class=" txt-danger zmdi zmdi-star mr-0"></a><a-->
+														<!--href="javascript:void(0);"-->
+														<!--class="txt-danger zmdi zmdi-star mr-0"></a><a-->
+														<!--href="javascript:void(0);"-->
+														<!--class=" txt-danger zmdi zmdi-star mr-0"></a><a-->
+														<!--href="javascript:void(0);"-->
+														<!--class=" txt-danger zmdi zmdi-star mr-0"></a><a-->
+														<!--href="javascript:void(0);"-->
+														<!--class=" txt-danger zmdi zmdi-star-outline mr-0"></a>-->
+												<!--</div>-->
+
+												<div style="display:flex">
+													<p class="head-font block text-warning font-15">৳[[${product.price}]]</p>
+													<p class="head-font block font-14 ml-10"><del>৳[[${product.old_price}]]</del>
+													</p>
+												</div>
+
+												<p style="font-size: 13px;">Quantity : [[${product.quantity}]]</p>
+
+												<p th:if="${product.productSizeId!=0}" style="margin: -5px 0px; padding: 0px;font-size: 13px;">
+													Size : [[${product.sizeName}]]
+												</p>
+												<p th:if="${product.productSizeId==0}" style="margin: -5px 0px; padding: 0px;font-size: 13px;">
+													Size : None
+												</p>
+
+												<div th:if="${product.productColorId!=0}" style="display:flex; ">
+													<p style="font-size: 13px;">
+														Color : [[${product.colorName}]]
+													</p>
+													<div th:style="'width: 12px; height:12px; background-color:'+${product.colorCode}+'; margin: 6px 7px; border-radius: 15%; border: 1px solid #fff; '">
+													</div>
+												</div>
+
+												<div th:if="${product.productColorId==0}" style="display:flex; ">
+													<p style="font-size: 13px;">
+														Color : None
+													</p>
+												</div>
+
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+			<!-- Row -->
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+		<!-- Footer -->
+		<footer class="footer container-fluid pl-30 pr-30">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>2017 &copy; Doodle. Pampered by Hencework</p>
+				</div>
+			</div>
+		</footer>
+		<!-- /Footer -->
+
+	</div>
+	<!-- /Main Content -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- JavaScript -->
+
+<!-- jQuery -->
+
+
+<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Data table JavaScript -->
+<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+
+
+<!-- simpleWeather JavaScript -->
+<script src="vendors/bower_components/moment/min/moment.min.js"></script>
+<script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+
+
+
+<!-- Progressbar Animation JavaScript -->
+<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+
+
+<!-- Switchery JavaScript -->
+<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+
+<!-- Owl JavaScript -->
+<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+<!-- ChartJS JavaScript -->
+<script src="vendors/chart.js/Chart.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="vendors/bower_components/raphael/raphael.min.js"></script>
+<script src="vendors/bower_components/morris.js/morris.min.js"></script>
+<script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+<!-- Switchery JavaScript -->
+<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+<!-- Bootstrap Daterangepicker JavaScript -->
+<script src="vendors/bower_components/dropify/dist/js/dropify.min.js"></script>
+
+<script src="vendors/bower_components/bootstrap-validator/dist/validator.min.js"></script>
+
+<!-- Form Flie Upload Data JavaScript -->
+<script src="dist/js/form-file-upload-data.js"></script>
+
+<script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="dist/js/sweetalert-data.js"></script>
+
+<script src="dist/js/simpleweather-data.js"></script>
+<!-- Fancy Dropdown JS -->
+<!-- Slimscroll JavaScript -->
+<script src="dist/js/jquery.slimscroll.js"></script>
+<!-- Fancy Dropdown JS -->
+<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+<!-- Init JavaScript -->
+<script src="dist/js/init.js"></script>
+<!-- <script src="dist/js/dashboard-data.js"></script> -->
+<script src="dist/js/jquery.slimscroll.js"></script>
+<script src="dist/js/modal-data.js"></script>
+
+<!--<script src="dist/js/category.js"></script>-->
+
+
+<script th:inline="javascript">
+
+	var customerOrder = [[${customerOrder}]];
+
+	$(document).ready(function(){
+
+	    var status = customerOrder.status;
+	    if(status=="Pending"){
+	        $("#pending").prop("checked", true);
+		}else if(status=="Success"){
+            $("#success").prop("checked", true);
+        }else if(status=="Failed"){
+            $("#failed").prop("checked", true);
+        }
+
+
+        var totalQuantity = 0;
+        $.each($(".qunt"), function (i, v) {
+            totalQuantity += +$(v).text();
+        });
+        $("#total_quantity").text(totalQuantity);
+
+
+        updateOrderStatus();
+
+	});
+
+	function defineVat(ctx) {
+		var vat = $(ctx).val();
+		$("#vat").text(vat);
+    }
+
+
+	function updateOrderStatus()
+	{
+        $("#pending, #success, #failed").change(function (e) {
+            console.log($(this).val());
+        });
+	}
+
+
+    function printSalesReceipt() {
+
+        //	window.print();
+
+        var divToPrint = document.getElementById('receipt-content');
+
+
+        //divToPrint.print();
+
+        var newWin = window.open('', 'Print-Window');
+        newWin.document.open();
+
+        drprescription = "<p style='text-align:left;padding: 0px 100px'>" + "</p>";
+        newWin.document.write('<html> <head> <style>.reciept_table {width: 100%;}.reciept_table tr th,.reciept_table tr td {border: 1px solid rgba(192, 189, 189, 0.582);padding: 3px 10px;}.reciept_table tr td {padding: 5px 10px;color: #000;}</style> <link href="vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css" /> 	<link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css" /><link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css"> <link href="vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" type="text/css"><link href="vendors/bower_components/dropify/dist/css/dropify.min.css" rel="stylesheet" type="text/css" /><link href="dist/css/style.css" rel="stylesheet" type="text/css">  <body onload="window.print()"> ' + divToPrint.innerHTML + '</head></body></html>');
+        newWin.document.close();
+        setTimeout(function () { newWin.close(); }, 1);
+
+    }
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+
+<!-- Toast Message Dialog -->
+
+<div class="jq-toast-wrap top-right">
+	<div id="successToast" class="jq-toast-single jq-has-icon jq-icon-success" style="text-align: left; display: none;">
+		<span class="jq-toast-loader jq-toast-loaded" style="-webkit-transition: width 3.1s ease-in;
+        -o-transition: width 3.1s ease-in;
+        transition: width 3.1s ease-in;
+        background-color: #e69a2a;">
+		</span>
+		<span onclick="closeToast()" class="close-jq-toast-single">×</span>
+		<h2 class="jq-toast-heading">Success!</h2>Product information successfully saved.
+	</div>
+</div>
+
+
+
+<div class="jq-toast-wrap top-right">
+	<div id="errorToast" class="jq-toast-single jq-has-icon jq-icon-error" style="text-align: left; display: none;">
+		<span class="jq-toast-loader jq-toast-loaded" style="-webkit-transition: width 3.1s ease-in;
+            -o-transition: width 3.1s ease-in;
+            transition: width 3.1s ease-in;
+            background-color: #e69a2a;">
+		</span>
+		<span onclick="closeToast()" class="close-jq-toast-single">×</span>
+		<h2 class="jq-toast-heading">Opps! somthing wents wrong</h2>Product information can't save.
+	</div>
+</div>
+
+
+<!-- Mirrored from hencework.com/theme/doodle-demo/full-width-light/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Jan 2020 09:16:33 GMT -->
+
+</html>
